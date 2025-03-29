@@ -8,7 +8,9 @@ leg2 = [4, 12, 24, 40]
 def getHypotenuse(leg1, leg2):
 	output = [] # init output array
 	for i in range(len(leg1)): # iterate through each value
-		output.append((leg1[i]**2 + leg2[i]**2)**0.5) # calculate for hypotenuse and add to output list
+		calculatedValue = (leg1[i]**2 + leg2[i]**2)**0.5
+		output.append(calculatedValue) # calculate for hypotenuse and add to output list
+		print(calculatedValue)
 	return output
 
 # -----RUNTIME----
